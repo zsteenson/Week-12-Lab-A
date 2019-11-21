@@ -28,3 +28,18 @@ def FindWordCount(list_words, string):
             if small_string[i:((len(string)) + i)] == string:
                 word_count += 1
     return word_count
+
+def ScoreFinder(list_1, list_2, string):
+    list_1_lower = []
+    for small_list in list_1:
+        list_1_lower.append(small_list.lower())
+    if string in list_1_lower or string in list_1:
+        for i in range(len(list_1_lower)):
+            if list_1_lower[i] == string or list_1[i] == string:
+                PrintOutput("%s got a score of %d" % (list_1[i], list_2[i]))
+    else:
+        PrintOutput("player not found")
+
+def Union(list_1, list_2):
+    list_union = list_1 + list_2
+    return list_union
