@@ -12,3 +12,11 @@ def LoadFile(file):
     list_string = string.split("\n")
     return list_string
     f.close()
+    
+def UpdateString(string_1, string_2, int_1):
+    list_new = []
+    for char in string_1:
+        list_new.append(char)
+    list_new[int_1] = string_2
+    string_new = ''.join(list_new)
+    PrintOutput(string_new)
