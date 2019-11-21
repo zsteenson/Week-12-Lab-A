@@ -43,3 +43,10 @@ def ScoreFinder(list_1, list_2, string):
 def Union(list_1, list_2):
     list_union = list_1 + list_2
     return list_union
+
+def Intersection(list_1, list_2):
+    intersection_list = []
+    for char in list_1:
+        if char in list_2:
+            intersection_list.append(char)
+    return intersection_list
