@@ -50,3 +50,10 @@ def Intersection(list_1, list_2):
         if char in list_2:
             intersection_list.append(char)
     return intersection_list
+
+def Notin(list_1, list_2):
+    notin_list = []
+    for char in list_1:
+        if not(char in list_2):
+            notin_list.append(char)
+    return notin_list
