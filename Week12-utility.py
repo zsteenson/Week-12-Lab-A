@@ -6,3 +6,9 @@
 def PrintOutput(a):
     print('OUTPUT', a)
 
+def LoadFile(file):
+    f = open(file, "r")
+    string = f.read()
+    list_string = string.split("\n")
+    return list_string
+    f.close()
